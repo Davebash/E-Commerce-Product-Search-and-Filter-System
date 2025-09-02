@@ -585,9 +585,9 @@ void searchByID() {
 }
 
 string normalizeID(string id) {
-    // Ensure first 3 characters are uppercase
-    for (int i = 0; i < 3 && i < id.size(); i++) {
-        id[i] = toupper(id[i]);
+
+    if (id.substr(0, 3) != "PID") {
+        id = "PID" + id.substr(3);
     }
     return id;
 }
