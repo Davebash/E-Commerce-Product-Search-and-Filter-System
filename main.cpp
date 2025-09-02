@@ -33,7 +33,7 @@ CartNode* cartHead = nullptr;
 vector<Product> sortedProducts;
 
 // Function prototypes
-int generateProductNumber();
+int generateProductNumber(Node* root);
 string formatProductID(int number);
 string normalizeID(string id);
 int extractIDNumber(const string& id);
@@ -308,9 +308,9 @@ void productManagementMenu() {
         
         switch(choice) {
             case 1:
-                root = addProducts(root);
+                ::root = addProducts(::root);
                 sortedProducts.clear();
-                toArray(root, sortedProducts);
+                toArray(::root, sortedProducts);
                 pressEnterToContinue();
                 break;
             case 2:
@@ -908,7 +908,7 @@ void displayThankYou() {
 }
 
 // Function definitions
-int generateProductNumber() {
+int generateProductNumber(Node* root) {
     // Find the highest existing ID number and continue from there
     int maxID = 0;
     
@@ -1019,7 +1019,7 @@ Node* addProducts(Node* root) {
         Product p;
         cout << "\nEnter product details:\n";
 
-        int autoID = generateProductNumber();
+        int autoID = generateProductNumber(root);
         p.ID = formatProductID(autoID);
         cout << "Assigned ID: " << p.ID << endl;
 
