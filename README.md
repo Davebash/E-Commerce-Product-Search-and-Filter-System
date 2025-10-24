@@ -269,6 +269,15 @@ void checkout()
 - **Performance Monitoring**: Real-time system metrics
 - **A/B Testing**: Feature optimization framework
 
+## 👥 Collaborators
+
+This project was developed collaboratively by:
+
+- **Mubin Abduselam**
+- **Eyuel Askemariam**
+- **Firaol Feyisa**
+- **Dawit Zelalem**
+
 ## 🤝 Contributing
 
 We welcome contributions to enhance this system! Here's how you can help:
@@ -304,7 +313,7 @@ For questions, issues, or contributions:
 
 - **ssues**: Use the GitHub issue tracker
 - **Discussions**:[ For Coder](https://t.me/forcoder)
-- **Email**: flexflash09@gmail.com
+- **Email**: davezelalem00@gmail.com
 
 ---
 
